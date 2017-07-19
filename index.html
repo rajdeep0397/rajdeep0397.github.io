@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+               <title>   </title>
+			   
+                <link rel="stylesheet" type="text/css" href ="style.css">
+				<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+    </head>
+
+	<body class="b" background="https://s-media-cache-ak0.pinimg.com/originals/e4/98/1a/e4981a3dd4aa2fa6f0bc84cde9087c7a.jpg">
+	
+	
+	<h1>A Basic Calculator</h1>
+	<br/>
+
+<div id="container">
+	
+	<h2>Electronic Calculator</h2>
+	
+	<form name="calc">
+	
+	<input type="text" name="output" placeholder="0" disabled/>
+	
+	<br/>
+	<input type="button" value=" ON "onclick="on()" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	<input type="button" value=" OFF "onclick="entries('(')" />
+	<br/>
+	
+<input type="button1" value=" C "onclick="erase()" />
+	<input type="button" value=" ( "onclick="entries('(')" />
+	<input type="button" value=" ) "onclick="entries(')')"/>
+	<input type="button" value=" / "onclick="entries('/')"/>
+
+	<br/>
+	
+	<input type="button" value=" 7 "onclick="entries('7')" />
+	<input type="button" value=" 8 "onclick="entries('8')" />
+	<input type="button" value=" 9 "onclick="entries('9')" />
+	<input type="button" value=" X "onclick="entries('*') "/>
+
+	<br/>
+	
+	<input type="button" value=" 4 "onclick="entries('4')" />
+	<input type="button" value=" 5 "onclick="entries('5')" />
+	<input type="button" value=" 6 "onclick="entries('6')" />
+	<input type="button" value=" - "onclick="entries('-')"/>
+
+	<br/>
+	
+	<input type="button" value=" 1 "onclick="entries('1') "/>
+	<input type="button" value=" 2 "onclick="entries('2')" />
+	<input type="button" value=" 3 "onclick="entries('3')" />
+	<input type="button" value=" + " onclick="entries('+')">
+
+	<br/>
+
+	<input type="button" value=" . " onclick="entries('.')" />
+	<input type="button" value=" 0 "onclick="entries('0')" />
+	<input type="button" value=" = "onclick="calculate()"/>
+	<input type="button" value=" % "onclick="entries('%')" />
+
+	<br/>
+
+	</form>
+	
+	</div>
+
+
+	<br/>
+
+			
+			
+			<script type="text/javascript" src="script.js">
+			</script>
+    
+	
+	
+	</body>
+
+
+
+
+	
+</html>

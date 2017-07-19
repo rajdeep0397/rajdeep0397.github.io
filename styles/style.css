@@ -1,0 +1,130 @@
+*{
+	
+	padding: 0px;
+	margin: 0px;
+	
+}
+.b{
+width:100vw;
+height:100vh;	
+	
+	
+}
+
+html{
+	background-color: #e6e6e6;
+	}
+	
+	
+
+
+h1{
+
+text-align:center;
+color:red;
+height:50px;
+font-size:50px;
+padding:35px auto 35px auto;
+font-family: 'Orbitron', sans-serif;
+color:#006652;
+}
+
+h2{
+	text-align:center;
+	
+	padding:10px;
+}
+
+#container {
+
+position:relative;	
+width:300px;
+border:3px solid gray;
+margin:30px auto;
+border-radius:11%;
+background-color:#f2f2f2;
+padding:0px 5px 15px 5px;;
+box-shadow: 0 10px  #999;
+font-family: 'Orbitron', sans-serif;
+font-size:12px;
+	}
+	
+	
+	
+	
+	
+input[type=text]{
+position:relative;
+display:block;
+width:80%;
+height:40px;
+margin:10px auto 0px auto;
+font-size:20px;	
+	box-shadow: 0 2px #999;
+/*border:3px solid gray;*/	
+border:1px solid darkgrey;
+	font-family: 'Orbitron', sans-serif;
+
+background-color:lightgray;
+	
+}
+
+
+input[type=button]{
+
+position:relative;
+background-color:#595959;
+width:20%;
+margin:2%;
+font-size:20px;
+font-weight:bold;
+font-family: 'Orbitron', sans-serif;
+
+border-radius:23%	;
+	 box-shadow: 0 4px #999;
+}
+
+input[type=button]:hover{
+	
+	background-color:darkgrey;
+	
+}
+input[type=button]:active{
+	transform:translateY(2px);
+	box-shadow: 0 4px #404040;
+	
+	
+}
+
+
+input[type=button1]{
+
+position:relative;
+background-color:red;
+width:19%;
+margin:2%;
+font-size:20px;
+font-weight:bold;
+font-family: 'Orbitron', sans-serif;
+
+border-radius:22%	;
+	 box-shadow: 0 4px #999;
+}
+
+	input[type=button1]:hover{
+	
+	background-color:darkred;
+	
+}
+input[type=button1]:active{
+	transform:translateY(2px);
+	box-shadow: 0 4px #404040;
+	
+	
+}
+
+	
+
+
+
+	
