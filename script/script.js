@@ -28,6 +28,6 @@ function on(){
 }
 
 function off(){
-	erase();
+	document.calc.output.value="";
 	state = 0;
 }
