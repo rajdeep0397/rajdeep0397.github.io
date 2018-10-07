@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-               <title>   </title>
-			   
-                <link rel="stylesheet" type="text/css" href ="styles/style.css">
-				<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				
-    </head>
-
-	<body class="b" background="https://s-media-cache-ak0.pinimg.com/originals/e4/98/1a/e4981a3dd4aa2fa6f0bc84cde9087c7a.jpg">
-	
-	
-	<h1>A Basic Calculator</h1>
-	<br/>
-
-<div id="container">
-	
-	<h2>Electronic Calculator</h2>
-	
-	<form name="calc">
-	
-	<input type="text" name="output" placeholder="" disabled/>
-	
-	<br/>
-	<input type="button" value=" ON "onclick="on()" />
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	
-	<input type="button" value=" OFF "onclick="off()" />
-	<br/>
-	
-<input type="button1" value=" C "onclick="erase()" />
-	<input type="button" value=" ( "onclick="entries('(')" />
-	<input type="button" value=" ) "onclick="entries(')')"/>
-	<input type="button" value=" / "onclick="entries('/')"/>
-
-	<br/>
-	
-	<input type="button" value=" 7 "onclick="entries('7')" />
-	<input type="button" value=" 8 "onclick="entries('8')" />
-	<input type="button" value=" 9 "onclick="entries('9')" />
-	<input type="button" value=" X "onclick="entries('*') "/>
-
-	<br/>
-	
-	<input type="button" value=" 4 "onclick="entries('4')" />
-	<input type="button" value=" 5 "onclick="entries('5')" />
-	<input type="button" value=" 6 "onclick="entries('6')" />
-	<input type="button" value=" - "onclick="entries('-')"/>
-
-	<br/>
-	
-	<input type="button" value=" 1 "onclick="entries('1') "/>
-	<input type="button" value=" 2 "onclick="entries('2')" />
-	<input type="button" value=" 3 "onclick="entries('3')" />
-	<input type="button" value=" + " onclick="entries('+')">
-
-	<br/>
-
-	<input type="button" value=" . " onclick="entries('.')" />
-	<input type="button" value=" 0 "onclick="entries('0')" />
-	<input type="button" value=" = "onclick="calculate()"/>
-	<input type="button" value=" % "onclick="entries('%')" />
-
-	<br/>
-
-	</form>
-	
-	</div>
+<head>
+	 <script src="https://aframe.io/releases/0.2.0/aframe.js"></script>
+<body>
 
 
-	<br/>
 
-			
-			
-			<script type="text/javascript" src="script/script.js">
-			</script>
-    
-	
-	
-	</body>
+	<a-scene>
+			<a-assets>
+                <img id="texture1" src="img/texture1.jpg">
+                <img id="texture2" src="img/texture2.jpg">
+                <img id="texture3" src="img/texture3.jpg">
+                <img id="texture4" src="img/texture4.jpg">
+                <img id="texture5" src="img/texture5.jpg">
+                <img id="texture6" src="img/texture6.jpg">
+                <img id="texture7" src="img/texture7.jpg">
+                <img id="texture8" src="img/texture8.jpg">
+            </a-assets>  
+
+ 
+            	
+                <a-sphere position="1 0 0" radius="1" color="#a3a375" src="#texture1">
+                	
+                	 <a-animation attribute="rotation"  dur="4000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+           <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
+
+
+
+                <a-sphere position="-18 2 -2" radius="1.8" color="#ff5c33" src="#texture2">
+                	
+                	 <a-animation attribute="rotation" dur="4000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+
+                <a-sphere position="27 6 -7" radius="3" color="#00ace6" src="#texture3">
+                	
+                	 <a-animation attribute="rotation"  dur="7000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+
+
+                <a-sphere position="-36 9 -10" radius="3.5" color=" #e60000" src="#texture4">
+                	
+                	 <a-animation attribute="rotation"  dur="7700" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+
+                <a-sphere position="-40 -12 7" radius="3.8" color="#ff4d4d" src="#texture5" >
+                	
+                	 <a-animation attribute="rotation"  dur="8000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+
+                <a-sphere position="-60 -7 3" radius="4" color=" #ff9933" src="#texture6">
+                	
+                	 <a-animation attribute="rotation" dur="8000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+                <a-torus geometry="arc:360" position="-60 -7 3" radius="7" color="#D3D3D3"></a-torus>
+
+
+
+                <a-sphere position="40 -20 20" radius="5" color="#80ccff" src="#texture7">
+                	
+                	 <a-animation attribute="rotation"  dur="10000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
+
+
+
+                <a-sphere position="70 0 0" radius="5" color="#3333ff" src="#texture8 ">
+                	
+                	 <a-animation attribute="rotation" dur="10000" repeat="indefinite" to="0 360 0" src="#texture1"></a-animation>
+                </a-sphere>
 
 
 
 
-	
+
+
+			  <a-camera position="0 50 0">
+                <a-cursor color="#FF0000">
+            </a-camera>
+
+            <a-sky src="img/yo.jpg" color="#b3b3ff"></a-sky>
+	</a-scene>
+
+</body>
 </html>
